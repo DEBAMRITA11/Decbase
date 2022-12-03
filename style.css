@@ -9,13 +9,14 @@ body {
     font-weight: 400;
     font-size: 18px;
     color: #646464;
+    line-height: 1.7;
 }
 h1,
 h2,
 h3,
 h4 {
     font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     color: #212121;
 
 }
@@ -47,4 +48,79 @@ h4 {
 @media (max-width: 991px) {
     
 }
+/* main-area css*/
+.main-area {
+    padding: 200px 0;
+}
 /* footer-area css*/
+.footer-area {
+   background-color: #F8F8F8;
+   position:relative
+}
+.footer-top {
+    padding-top: 90px;
+    padding-bottom: 70px;
+}
+.footer-about img {
+    margin-bottom: 18px;
+}
+.footer-link h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.footer-link ul {
+    margin:0;
+    padding:0;
+}
+.footer-link ul li {
+    list-style: none;
+}
+.footer-link ul li a {
+    display:inline-block;
+    padding: 5px 0;
+    text-decoration: none;
+    color:#646464;
+    transition: .3s;
+}
+.footer-link ul li a:hover {
+    color:#37806B;
+}
+.footer-link address {
+    line-height: 2.2;
+}
+.footer-link .social-link li {
+    display: inline-block;
+    margin-right: 10px;
+}
+.footer-link .social-link li a {
+    height: 40px;
+    width: 40px;
+    background-color: #E5E5E5;
+    color:#ffffff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: .3s;
+}
+.footer-link .social-link li a:hover {
+    background-color: #37806B;
+}
+.footer-bottom {
+    border-top: 1px solid #C4C4C4;
+}
+.footer-bottom-text a {
+    text-decoration: none;
+    color: #37806B;
+}
+.design {
+    position: absolute;
+    top: -50px;
+}
+.design img {
+    height: 100px;
+}
+@media (max-width: 991px) {
+    
+}
