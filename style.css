@@ -3,6 +3,7 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Poppins', sans-serif;
 */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;600;700&display=swap');
+
 /* basic css*/
 body {
     font-family: 'Open Sans', sans-serif;
@@ -20,6 +21,37 @@ h4 {
     color: #212121;
 
 }
+.theme-button {
+    text-decoration: none;
+    background-color: #37806B;
+    text-transform: capitalize;
+    color: #ffffff;
+    border-radius: 15px 0px;
+    padding: 10px 20px;
+    transition: 0.3s;
+    display:inline-block;
+}
+.theme-button:hover {
+    background-color: #CAA892;
+    color:#ffffff;
+}
+.design-image {
+    position: relative;
+    z-index: 1;
+    
+}
+.design-image::after {
+     position:absolute;
+     content: "";
+     height: 100%;
+     width: 100%;
+     left: 20px;
+     top: 20px;
+     z-index:-1;
+     border-radius: 140px 0px;
+     border: 2px solid #B0855B;
+}
+
 /* header-area css*/
 .header-area {
     padding: 30px 0;
@@ -49,9 +81,29 @@ h4 {
     
 }
 /* main-area css*/
-.main-area {
-    padding: 200px 0;
+/* hero-area css*/
+.hero-area {
+    padding: 70px 0;
 }
+.hero-image img {
+    width: 100%;
+    border-radius: 140px 0px;
+}
+.hero-text h3 {
+    font-size: 20px;
+    color:#646464;
+    text-transform: uppercase;
+}
+.hero-text h2 {
+    font-size: 70px;
+    color:#212121;
+    text-transform: capitalize;
+}
+.hero-text a {
+    margin-top: 15px;
+}
+    
+
 /* footer-area css*/
 .footer-area {
    background-color: #F8F8F8;
