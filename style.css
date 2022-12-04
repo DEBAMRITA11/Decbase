@@ -40,11 +40,16 @@ h4 {
     z-index: 1;
     
 }
+.design-image img {
+    width: 100%;
+    border-radius: 140px 0px;
+    
+}
 .design-image::after {
      position:absolute;
      content: "";
-     height: 100%;
-     width: 100%;
+     right: -20px;
+     bottom:-20px;
      left: 20px;
      top: 20px;
      z-index:-1;
@@ -286,6 +291,152 @@ h4 {
 .special {
     margin-top: 100px;
 }
+@media (max-width: 991px) {
+    
+}
+
+/* start blog-area css*/
+.blog-area {
+    background-color: #F8F8F8;
+    padding: 100px 0;
+}
+.blog-area .section-heading {
+    margin-bottom: 70px;
+}
+.blog-text {
+    margin-top: 40px;
+}
+
+@media (max-width: 991px) {
+    
+}
+
+/* start sing-up-area css*/
+.sing-up-area {
+    padding: 180px 0;
+}
+.sign-up-text h3 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.sign-up-text h3::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 400px;
+    background-color: #C4C4C4;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.sign-up-text p {
+    margin-bottom: 40px;
+}
+.sing-up-area .form-control {
+    background-color: #EEEE;
+    border: none;
+    font-size: 20px;
+    border-radius: 20px 0 0 0;
+    padding: 10px 15px;
+}
+.sing-up-area button {
+    border: none;
+    background-color: #37806B;
+    color:#FFFFFF;
+    padding: 10px 40px;
+    border-radius: 0 0 20px 0;
+} 
+.sing-up-area button:hover {
+    background-color: #B0855B;
+}
+@media (max-width: 991px) {
+    
+}
+
+/* start testimonial-area css*/
+.testimonial-area {
+    padding: 100px 0;
+    position: relative;
+}
+.all-testimonial{
+    padding-top: 70px; 
+    position: relative;
+}
+.single-testimonial {
+    padding: 15px;
+}
+.testimonial-content {
+    display: flex;
+    padding: 40px;
+    padding-left: 0;
+    position: relative;
+    z-index: 1;
+}
+.testimonial-content::after {
+    position:absolute;
+    content: "";
+    top:0;
+    right:0;
+    bottom:0;
+    left: 65px;
+    z-index: -1;
+    background: #FFFFFF;
+    box-shadow: 5px 5px 10px 5px rgba(66, 96, 84, 0.15);
+    border-radius: 70px 0px;
+}
+.testimonial-image {
+    margin-right: 20px;
+}
+.testimonial-image img {
+    width: 130px !important;
+    height: 130px;
+}
+.testimonial-text h3 {
+    font-size: 22px;
+}
+.testimonial-text h3 span {
+    font-size: 14px;
+    color:#646464;
+}
+.icon-img {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+}
+.icon-img img {
+    width: 15px;
+    height: auto;
+}
+.testimonial-area .owl-nav {
+    position:absolute;
+    right:0;
+    top: -80px;
+}
+.testimonial-area .owl-nav span {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-color: #ffffff;
+    color: #646464;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.testimonial-area .owl-nav span:hover {
+    background-color: #37806B;
+    color: #ffffff;
+}
+.testimonial-area .owl-next {
+    margin-left: 10px;
+}
+
+@media (max-width: 991px) {
+    
+}
+
+
 /* footer-area css*/
 .footer-area {
    background-color: #F8F8F8;
@@ -357,4 +508,22 @@ h4 {
 }
 @media (max-width: 991px) {
     
+}
+
+
+/* DESIGN-IMAGE*/
+@media (max-width: 991px) {
+    .design-image {
+        padding-right: 20px;
+    }
+    .design-image::after {
+        right: -20px;
+     bottom:-20px;
+     left: 20px;
+     top: 20px;
+        left: 20px;
+        right: 0;
+        top: 20px;
+        bottom: -20px;
+    }
 }
