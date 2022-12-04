@@ -64,10 +64,10 @@ h4 {
 .design-image-two::after {
      position:absolute;
      content: "";
-     height: 100%;
-     width: 100%;
      left: -20px;
+     right: 20px;
      top: -20px;
+     bottom: 20px;
      z-index:-1;
      border-radius: 140px 0px;
      border: 2px solid #B0855B;
@@ -108,7 +108,7 @@ h4 {
     color:#646464;
 }
 .header-area .nav-item:last-child {
-    margin-left: 45px;
+    margin-left: 30px;
 }
 .header-area .nav-item:last-child .nav-link {
     background-color: #CAA892;
@@ -118,9 +118,19 @@ h4 {
     padding: 10px 20px;
 }
 @media (max-width: 991px) {
-    
+    .header-area .nav-item:last-child .nav-link {
+        text-align: center;
+        margin-top: 5px;
+    }
+    .header-area .nav-link {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        width: 100%;
+    }
 }
 /* main-area css*/
+
 /* hero-area css*/
 .hero-area {
     padding: 70px 0;
@@ -143,13 +153,31 @@ h4 {
     margin-top: 15px;
 }
 @media (max-width: 991px) {
-    
+   .hero-text {
+    margin-bottom: 30px;
+   } 
+   .hero-text h3 {
+    font-size: 15px;
+}
+   .hero-text h2 {
+    font-size: 50px;
+}
+   .hero-text a {
+    margin-top: 8px;
+    font-size: 15px;
+}
 }
  
 /* start service-area css*/
 .service-area {
     padding: 100px 0;
     position:relative;
+}
+.service-area .section-heading {
+    margin-bottom: 40px;
+}
+.service-area .section-heading h3 {
+    color:#111111;
 }
 .all-services {
     margin-top: 60px;
@@ -195,7 +223,25 @@ h4 {
     margin-bottom: 0;
 }
 @media (max-width: 991px) {
-    
+    .service-area {
+        padding: 70px 0;
+    }
+    .service-area .section-heading {
+        text-align: center;
+    }
+    .all-services {
+        margin-top: 60px;
+    }
+    .section-heading h3 {
+        font-size: 40px;
+    }
+    .section-heading h4 {
+        font-size: 20px;
+    }
+    .service-area .owl-nav {
+        right:0;
+        top: -50px;
+    }
 }
 
 /* about-area*/
@@ -203,7 +249,24 @@ h4 {
     padding: 100px 0;
 }
 @media (max-width: 991px) {
-    
+    .about-area {
+        padding: 70px 0;
+    }
+    .about-image {
+        margin-bottom: 40px;
+    }
+    .about-text .section-heading {
+        text-align: center;
+    }
+    .about-text .section-heading h3 {
+        font-size: 40px;
+    }
+    .about-text .section-heading h4 {
+        font-size: 20px;
+    }
+    .about-text .section-heading a {
+        font-size: 15px;
+    }
 }
 
 /* start success-area css*/
@@ -217,6 +280,28 @@ h4 {
 }
 
 @media (max-width: 991px) {
+    .success-area {
+        padding: 60px 0;
+    }
+    .success-text {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .success-area .theme-button {
+        margin-top: 25px;
+    }
+    .success-area .design-text h5 {
+        font-size: 150px;
+    }
+    .success-area .design-text h4 {
+        font-size: 20px;
+    }
+    .success-area .section-heading h3 {
+        font-size: 40px;
+    }
+    .success-area .section-heading a {
+        font-size: 15px;
+    }
     
 }
 
@@ -292,7 +377,53 @@ h4 {
     margin-top: 100px;
 }
 @media (max-width: 991px) {
-    
+    .work-area {
+        padding: 70px 0;
+    }
+    .all-work {
+        margin: 50px;
+    }
+    .single-work {
+       margin-bottom: 30px;
+    }
+    .single-work-text::after {
+        border-right: 2px solid #E0E0E0;
+        top: -35px;
+        bottom: 0px;
+        left: 0;
+        right:0;
+        border-top: 0;
+        height: 100px;
+        width: 70px;
+    }
+    .single-work-text.special::after {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right:0;
+        
+    }
+    .single-work-two .single-work-text::before {
+        border-top: 0;
+        border-right: 2px solid #E0E0E0;
+        height: 200px;
+        width: 70px;
+        right: 40px;
+        top: -140px;
+        bottom: 0;
+        left: 0;
+    }
+    .single-work-three .single-work-text::before {
+        height: 250px;
+        width: 70px;
+        border-right: 2px solid #E0E0E0;
+        left: 0px;
+        top: 100px;
+        bottom: 0px;
+        right: 100px;
+        border-top: 0;
+        border-left: 0;
+    }
 }
 
 /* start blog-area css*/
@@ -308,6 +439,15 @@ h4 {
 }
 
 @media (max-width: 991px) {
+    .blog-area {
+        padding: 70px 0px;
+    }
+    .blog-area .single-blog {
+        margin-bottom: 30px;
+    }
+    .blog-text a {
+        font-size: 15px;
+    }
     
 }
 
@@ -353,7 +493,12 @@ h4 {
     background-color: #B0855B;
 }
 @media (max-width: 991px) {
-    
+    .sing-up-area {
+        padding: 100px 0;
+    }
+    .sign-up-text h3 {
+        font-size: 40px;
+    }
 }
 
 /* start testimonial-area css*/
@@ -413,7 +558,7 @@ h4 {
 .testimonial-area .owl-nav {
     position:absolute;
     right:0;
-    top: -80px;
+    top: 0px;
 }
 .testimonial-area .owl-nav span {
     display: inline-block;
@@ -433,7 +578,19 @@ h4 {
 }
 
 @media (max-width: 991px) {
-    
+    .testimonial-area {
+        padding: 70px 0;
+    }
+    .testimonial-area .owl-nav {
+        right:0;
+        top: 10px;
+    }
+    .testimonial-area .section-heading h4 {
+        font-size: 20px;
+    }
+    .testimonial-area .section-heading h3 {
+        font-size: 40px;
+    }
 }
 
 
@@ -507,7 +664,12 @@ h4 {
     height: 100px;
 }
 @media (max-width: 991px) {
-    
+    .footer-link {
+        margin-bottom: 20px;
+    }
+    .footer-top {
+        text-align: center;
+    }
 }
 
 
@@ -517,13 +679,19 @@ h4 {
         padding-right: 20px;
     }
     .design-image::after {
-        right: -20px;
-     bottom:-20px;
-     left: 20px;
-     top: 20px;
         left: 20px;
         right: 0;
         top: 20px;
         bottom: -20px;
     }
+    .design-image-two {
+        padding-left: 20px;
+    }
+    .design-image-two::after {
+        left: 0px;
+        right: 20px;
+        top: -20px;
+        bottom: 20px;
+        
+   }
 }
