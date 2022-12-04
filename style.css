@@ -2,7 +2,7 @@
 font-family: 'Open Sans', sans-serif;
 font-family: 'Poppins', sans-serif;
 */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600,700&family=Poppins:wght@500;600;700&display=swap');
 
 /* basic css*/
 body {
@@ -50,6 +50,41 @@ h4 {
      z-index:-1;
      border-radius: 140px 0px;
      border: 2px solid #B0855B;
+}
+.design-image-two {
+    position: relative;
+    z-index: 1;
+    
+}
+.design-image-two::after {
+     position:absolute;
+     content: "";
+     height: 100%;
+     width: 100%;
+     left: -20px;
+     top: -20px;
+     z-index:-1;
+     border-radius: 140px 0px;
+     border: 2px solid #B0855B;
+}
+.section-heading h4 {
+     font-size: 20px;
+     text-transform: uppercase;
+     color:#646464;
+     font-weight: 600;
+}
+.section-heading h3 {
+    font-size: 48px;
+    color:#646464;
+}
+.design-text h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 288px;
+    font-weight: 700;
+    background-image: url(assets/image/text-bj.png);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: cover;
 }
 
 /* header-area css*/
@@ -102,8 +137,155 @@ h4 {
 .hero-text a {
     margin-top: 15px;
 }
+@media (max-width: 991px) {
     
+}
+ 
+/* start service-area css*/
+.service-area {
+    padding: 100px 0;
+    position:relative;
+}
+.all-services {
+    margin-top: 60px;
+    position:relative;
+}
+.service-area .owl-nav {
+    position:absolute;
+    right:0;
+    top: -80px;
+}
+.service-area .owl-nav span {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-color: #ffffff;
+    color: #646464;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.service-area .owl-nav span:hover {
+    background-color: #37806B;
+    color: #ffffff;
+}
+.service-area .owl-next {
+    margin-left: 10px;
+}
+.single-service {
+    background: #ffffff;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.14);
+    border-radius: 60px 0px;
+    padding: 40px 20px 40px 35px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.single-service:hover {
+    background-color: #CAA892;
+    color:#ffffff;
+}
+.single-service:hover h3 {
+    color:#ffffff;
+}
+.service-text p {
+    margin-bottom: 0;
+}
+@media (max-width: 991px) {
+    
+}
 
+/* about-area*/
+.about-area {
+    padding: 100px 0;
+}
+@media (max-width: 991px) {
+    
+}
+
+/* start success-area css*/
+
+.success-area {
+    padding: 100px 0;
+    position: relative;
+}
+.success-area .theme-button {
+    margin-top: 35px;
+}
+
+@media (max-width: 991px) {
+    
+}
+
+/* start work-section css*/
+
+.work-area {
+    padding: 100px 0;
+    background-color:  #F8F8F8;
+}
+.all-work {
+    margin: 100px;
+}
+.single-work {
+    display: flex;
+    justify-content: center;
+}
+.single-work-text {
+    padding: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 13px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 40px 0px;
+    height: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+}
+.single-work-text::after {
+    position: absolute;
+    content: "";
+    height:100px;
+    width: 67px;
+    border-top: 2px solid #E0E0E0;
+    border-right: 2px solid #E0E0E0;
+    z-index: -1;
+    right: -65px;
+    top: 100px;
+}
+.single-work-text.special::after {
+    left: -40px;
+    border-right: none;
+    
+}
+.single-work-two .single-work-text::before {
+    position: absolute;
+    content: "";
+    height:100px;
+    width: 67px;
+    border-top: 2px solid #E0E0E0;
+    z-index: -1;
+    right: -60px;
+    top: 100px;
+    left: none;
+}
+.single-work-three .single-work-text::before {
+    position: absolute;
+    content: "";
+    height:100px;
+    width: 67px;
+    border-top: 2px solid #E0E0E0;
+    border-left: 2px solid #E0E0E0;
+    z-index: -1;
+    left: -36px;
+    top: 100px;
+}
+.single-work-text h3 {
+    font-size: 50px;
+}
+.special {
+    margin-top: 100px;
+}
 /* footer-area css*/
 .footer-area {
    background-color: #F8F8F8;
